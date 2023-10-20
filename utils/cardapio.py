@@ -14,3 +14,6 @@ def criar_cardapio(self):
 
         self.cardapio.append(item)
         print("Item adicionado ao cardápio com sucesso!")
+
+
+if  

@@ -13,7 +13,8 @@ def menu(restaurante, cardapio, historico_vendas, localidade, n_pedidos, carrega
         print("5. Listar restaurantes")
         print("6. Remover restaurante")
         print("7. Atualizar número de pedidos")
-        print("8. Sair")
+        print("8. Fazer pedido")
+        print("9. Sair")
 
         opcao = input("Escolha uma opção: ")
 
@@ -69,8 +70,11 @@ def menu(restaurante, cardapio, historico_vendas, localidade, n_pedidos, carrega
                 salvar_restaurantes(restaurantes)
             else:
                 print("Restaurante não encontrado.")
+                
+        elif opcao == 8:
+            pass
 
-        elif opcao == "8":
+        elif opcao == "9":
             break
 
         else:

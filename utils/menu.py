@@ -1,7 +1,3 @@
-# Import local
-from novo_restaurante import Restaurante
-
-
 def menu(restaurante, cardapio, historico_vendas, localidade, n_pedidos, carregar_restaurantes, salvar_restaurantes):
     restaurantes = carregar_restaurantes()
 

@@ -74,6 +74,8 @@ def atualizar_pedidos(restaurante: dict) -> dict:
     restaurante['pedidos'] = pedidos
     return restaurante
 
+# ------------------------------------------
+
 def proximidade_restaurante(coord_1: list, coord_2: list) -> float:
     raio_terra = 6371.0  # raio da terra em km
 
@@ -99,9 +101,6 @@ def proximidade_restaurante(coord_1: list, coord_2: list) -> float:
 # abordagem usando a geopy
 def proximidade_restaurante_geopy(coord_1: list, coord_2: list) -> float:
     return round(distance.distance(coord_1, coord_2).km, 2)
-
-
-
 
 def fazer_pedido(cardapio, pedido) -> None:
     item = pedido

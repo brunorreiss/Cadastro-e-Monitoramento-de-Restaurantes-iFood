@@ -24,7 +24,7 @@ def menu(restaurante, cardapio, historico_vendas, localidade, n_pedidos, carrega
 
         elif opcao == "2":
             nome = input("Nome do restaurante: ")
-            restaurante = next((r for r in restaurantes if r.nome == nome), None)
+            restaurante = next((r for r in restaurantes if r.get('nome') == nome), None)
             if restaurante:
                 restaurante.criar_cardapio()
                 salvar_restaurantes(restaurantes)
@@ -33,7 +33,7 @@ def menu(restaurante, cardapio, historico_vendas, localidade, n_pedidos, carrega
 
         elif opcao == "3":
             nome = input("Nome do restaurante: ")
-            restaurante = next((r for r in restaurantes if r.nome == nome), None)
+            restaurante = next((r for r in restaurantes if r.get('nome') == nome), None)
             if restaurante:
                 restaurante.registrar_vendas()
                 salvar_restaurantes(restaurantes)
@@ -46,20 +46,20 @@ def menu(restaurante, cardapio, historico_vendas, localidade, n_pedidos, carrega
             localidade = {'lat': lat, 'lon': lon}
             restaurantes_proximos = sorted(restaurantes, key=lambda r: r.verificar_proximidade(localidade))
             for restaurante in restaurantes_proximos:
-                print(restaurante.nome)
+                print(restaurante.get('nome'))
 
         elif opcao == "5":
             for restaurante in restaurantes:
-                print(restaurante.nome)
+                print(restaurante.get('nome'))
 
         elif opcao == "6":
             nome = input("Nome do restaurante: ")
-            restaurantes = [r for r in restaurantes if r.nome != nome]
+            restaurantes = [r for r in restaurantes if r.get('nome') != nome]
             salvar_restaurantes(restaurantes)
 
         elif opcao == "7":
             nome = input("Nome do restaurante: ")
-            restaurante = next((r for r in restaurantes if r.nome == nome), None)
+            restaurante = next((r for r in restaurantes if r.get('nome') == nome), None)
             if restaurante:
                 n_pedidos = int(input("Número de pedidos: "))
                 restaurante.n_pedidos = n_pedidos

@@ -3,11 +3,15 @@ import utils
 from geopy import distance
 
 def cadastrar_restaurante(nome: str, coordenadas: list, n_pedidos=0):
+    cardapio = []
+    cardapio = criar_cardapio(cardapio)
     restaurante = { 'nome': nome, 
                    'lat': coordenadas[0], 
                    'lon': coordenadas[1], 
-                   'qtd_pedidos': n_pedidos}
-    utils.salvar_restaurantes(restaurante)
+                   'qtd_pedidos': n_pedidos,
+                   'cardapio': cardapio
+                   }
+    return restaurante
 
 
 def proximidade_restaurante(coord_1: list, coord_2: list) -> float:
@@ -33,25 +37,38 @@ def proximidade_restaurante(coord_1: list, coord_2: list) -> float:
 def proximidade_restaurante_geopy(coord_1: list, coord_2: list) -> float:    
     return round(distance.distance(coord_1, coord_2).km, 2)
 
-def criar_cardapio(cardapio: list):
+def criar_cardapio(items: list) -> None:
     print("Digite os itens do cardápio (digite 'sair' para terminar):")
     while True:
-        nome_item = input("Nome do item: ")
-        if nome_item.lower() == 'sair':
+        '''
+        item_cardapio = {
+            'nome_prouto': str,
+            'categoria': str,
+            'alcoolico': str,
+            'valor': float,
+            'estoque': int,
+        }
+        '''
+        nome_prouto = input("Nome do produto: ")
+        if nome_prouto.lower() == 'sair':
             break
-
-        tipo_item = input("Tipo do item (comida ou bebida): ").lower()
-        if tipo_item == 'bebida':
-            alcoolica = input("A bebida é alcoólica? (sim ou não): ").lower()
-            item = {'nome': nome_item, 'tipo': tipo_item, 'alcoolica': alcoolica == 'sim'}
-        else:
-            item = {'nome': nome_item, 'tipo': tipo_item}
-
-        cardapio.append(item)
-        print("Item adicionado ao cardápio com sucesso!")
+        categoria = input("Tipo do item (comida ou bebida): ").lower()
+        alcoolico = bool(input("O item é alcoolico?: 1 - Sim, 0 - Não").lower())
+        valor = float(input("Informe o valor do produto: "))
+        estoque = int(input('Informe a quantidade em estoque: '))
+        items.append(
+            {
+            'nome_prouto': nome_prouto,
+            'categoria': categoria,
+            'alcoolico': alcoolico,
+            'valor': valor,
+            'estoque': estoque,
+            }
+        )
+    return items
 
 def fazer_pedido(cardapio, pedido):
-    item = item
+    item = pedido
     if item in cardapio:
         print(f"Adicionando {item} ao seu pedido.")
         pedido.append(item)

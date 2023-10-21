@@ -1,3 +1,6 @@
+import sys
+sys.path.insert(1, '../')
+
 from utils.restaurante import restaurante as rt
 from utils.menu import menu
 

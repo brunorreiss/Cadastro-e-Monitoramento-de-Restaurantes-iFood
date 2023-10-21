@@ -1,7 +1,7 @@
 import os
 import platform
 from src.restaurante import *
-from src.utils import *
+from src.utils.utils import *
 
 def clear() -> None:
     if platform.system() == 'Windows':

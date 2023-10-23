@@ -8,13 +8,13 @@
 
 <h4> | <a href="#canais">Créditos</a> | <a href="#contexto">Contexto e objetivo</a> | <a href="#arquivos">Descrição dos arquivos</a> | <a href="#ferramentas">Ferramentas</a> | <a href="#funcionalidades">Funcionalidades</a> | <a href="#bot">O Bot</a> | <a href="#creditos">Créditos</a> |</h4>
 
-<a href="https://imgbox.com/EQdKMeQ2" target="_blank"><img src="https://imgbox.com/EQdKMeQ2" alt="image host" height="5px" width="900px"/></a>
+<a href="https://imgbox.com/3tZuCnVg" target="_blank"><img src="https://images2.imgbox.com/42/88/3tZuCnVg_o.png" alt="image host" height="5px" width="900px"/></a>
 
 <h2 id="creditos"> :scroll: CRÉDITOS</h2>
 
 O desenvolvimento do projeto dar-se-á conclusão do módulo I do curso Vem ser Tech | Dados, consistindo em um sistema simples de cadastro e monitoramentos de restaurantes.
 
-<a href="https://imgbox.com/EQdKMeQ2" target="_blank"><img src="https://imgbox.com/EQdKMeQ2" alt="image host" height="5px" width="900px"/></a>
+<a href="https://imgbox.com/3tZuCnVg" target="_blank"><img src="https://images2.imgbox.com/42/88/3tZuCnVg_o.png" alt="image host" height="5px" width="900px"/></a>
 
 <h2 id="contexto"> :brain: CONTEXTO E OBJETIVO</h2>
 

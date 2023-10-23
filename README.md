@@ -1,8 +1,8 @@
 <p align="center"> 
-<a href="https://imgbox.com/hdeygBol" target="_blank"><img src="https://images2.imgbox.com/95/76/hdeygBol_o.jpeg" alt="image host"/></a>
+<a href="https://imgbox.com/CyoffUZe" target="_blank"><img src="https://thumbs2.imgbox.com/90/6e/CyoffUZe_t.png" alt="image host"/></a>
 </p>
 <h1 align="center"> Cadastro e Monitoramento de Restaurantes - iFood </h1>
-<h4 align="center"> Vem ser Tech | Dados <a href="https://www.linkedin.com/school/adatechbr">Ada Tech</a> (Primavera 2023) </h4>
+<h4 align="center"> Vem ser Tech | Dados - <a href="https://www.linkedin.com/school/adatechbr">Ada Tech</a> (Primavera 2023) </h4>
 
 <br>
 </br>

@@ -12,7 +12,7 @@
 
 <h2 id="creditos"> :scroll: CRÉDITOS</h2>
 
-- Instituição: Let's Code (<a href="https://www.linkedin.com/school/adatechbr/">Ada Tech<)/a>
+- Instituição: Let's Code <a href="https://www.linkedin.com/school/adatechbr/">(Ada Tech)</a>
 - Curso: Vem ser Tech | Dados
 - Disciplina: Lógica de Programação I
 - Professores: Thiago
@@ -48,14 +48,19 @@ O seu grupo foi encarregado de fazer uma interface para cadastro e monitoramento
 
 Obs:. Você terá em mãos algumas funções que implementam a manipulação de arquivos, para viabilizar o projeto. 
 
-## Tecnologias
+<a href="https://imgbox.com/3tZuCnVg" target="_blank"><img src="https://images2.imgbox.com/42/88/3tZuCnVg_o.png" alt="image host" height="5px" width="900px"/></a>
+
+<h2 id="tecnologias"> 🛠️ TECNOLOGIAS</h2>
 
 - Python
 - Json
 - ...
 
-## Execução
-Como a proposta do projeto foi a utilização de técnicas e tecnologias vistas em aula, não foi necessário o uso de pacotes externos
+<a href="https://imgbox.com/3tZuCnVg" target="_blank"><img src="https://images2.imgbox.com/42/88/3tZuCnVg_o.png" alt="image host" height="5px" width="900px"/></a>
+
+<h2 id="execucao"> 🖥️ EXECUÇÃO</h2>
+
+Como a proposta do projeto foi a utilização de técnicas e tecnologias vistas em aula, não fez-se necessário a utilização de pacotes externos
 
 - Navegue até a pasta destino
 ```sh
@@ -67,6 +72,8 @@ cd grupo-7
 python __init__.py
 ```
 
-## Organização do projeto
+<a href="https://imgbox.com/3tZuCnVg" target="_blank"><img src="https://images2.imgbox.com/42/88/3tZuCnVg_o.png" alt="image host" height="5px" width="900px"/></a>
+
+<h2 id="execucao"> 📂 ORGANIZAÇÃO DO PROJETO</h2>
 ```sh
 ```

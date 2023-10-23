@@ -1,4 +1,8 @@
-# Cadastro e Monitoramento de Restaurantes - iFood
+<p align="center"> 
+<a href="https://imgbox.com/hdeygBol" target="_blank"><img src="https://images2.imgbox.com/95/76/hdeygBol_o.jpeg" alt="image host"/></a>
+</p>
+<h1 align="center"> Cadastro e Monitoramento de Restaurantes - iFood </h1>
+<h4 align="center"> Vem ser Tech | Dados <a href="https://www.linkedin.com/school/adatechbr">Ada Tech</a> (Primavera 2023) </h4>
 
 <br>
 </br>
@@ -6,9 +10,9 @@
 <a href="https://images.app.goo.gl/QpYQAZbj5fb2xocHA" target="_blank"><img src="https://images.app.goo.gl/QpYQAZbj5fb2xocHA" alt="image host" height="142px"/></a>
 </p>
 
-<h4> <p align="center"> <a href="#creditos">Créditos</a> | <a href="#equipe">Equipe</a> | <a href="#especificacao">Especificação</a> | <a href="#contexto">Contexto e objetivo</a> | <a href="#tecnologias">Tecnologias utilizadas</a> | <a href="execucao">Execução</a> | <a href="#organizacao">Organização do projeto</a> </p>
+<a href="https://imgbox.com/YnQ5WeyW" target="_blank"><img src="https://thumbs2.imgbox.com/3c/77/YnQ5WeyW_t.gif" alt="image host" height="5px" width="900px"/></a>
 
-<a href="https://imgbox.com/3tZuCnVg" target="_blank"><img src="https://images2.imgbox.com/42/88/3tZuCnVg_o.png" alt="image host" height="5px" width="900px"/></a>
+<h4> <p align="center"> <a href="#creditos">Créditos</a> | <a href="#equipe">Equipe</a> | <a href="#especificacao">Especificação</a> | <a href="#contexto">Contexto e objetivo</a> | <a href="#tecnologias">Tecnologias utilizadas</a> | <a href="execucao">Execução</a> | <a href="#organizacao">Organização do projeto</a> </p>
 
 <h2 id="creditos"> :scroll: CRÉDITOS</h2>
 
@@ -60,7 +64,6 @@ Obs:. Você terá em mãos algumas funções que implementam a manipulação de 
   <li>Json</li>
   <p> Inserir aqui descrição sobre Json. </p>
 </ul>
-<ul>
 
 <a href="https://imgbox.com/3tZuCnVg" target="_blank"><img src="https://images2.imgbox.com/42/88/3tZuCnVg_o.png" alt="image host" height="5px" width="900px"/></a>
 

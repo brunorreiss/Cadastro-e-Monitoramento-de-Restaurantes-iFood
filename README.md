@@ -6,7 +6,7 @@
 <a href="https://images.app.goo.gl/QpYQAZbj5fb2xocHA" target="_blank"><img src="https://images.app.goo.gl/QpYQAZbj5fb2xocHA" alt="image host" height="142px"/></a>
 </p>
 
-<h4> <p align="center"> <a href="#creditos">Créditos</a> | <a href="#equipe">Equipe</a> | <a href="#especificacao">Especificação</a> | <a href="#contexto">Contexto e objetivo</a> | <a href="#tecnologias">Tecnologias utilizadas</a> | <a href="execucao">Execução</a> | <a href="#organização">Organização do projeto</a> </p>
+<h4> <p align="center"> <a href="#creditos">Créditos</a> | <a href="#equipe">Equipe</a> | <a href="#especificacao">Especificação</a> | <a href="#contexto">Contexto e objetivo</a> | <a href="#tecnologias">Tecnologias utilizadas</a> | <a href="execucao">Execução</a> | <a href="#organizacao">Organização do projeto</a> </p>
 
 <a href="https://imgbox.com/3tZuCnVg" target="_blank"><img src="https://images2.imgbox.com/42/88/3tZuCnVg_o.png" alt="image host" height="5px" width="900px"/></a>
 
@@ -52,9 +52,15 @@ Obs:. Você terá em mãos algumas funções que implementam a manipulação de 
 
 <h2 id="tecnologias"> 🛠️ TECNOLOGIAS</h2>
 
-- Python
-- Json
-- ...
+<ul>
+  <li>Python</li>
+  <p> Para o desenvolvimento do projeto, utilizados como base a linguagem de programação<strong> Python</strong>, tanto por ser a ferramenta de aprendizado utilizada durante o curso, quanto por ser uma linguagem de alto nível, orientada a objetos, funcional e de tipagem dinâmica e forte. </p>
+</ul> 
+<ul>
+  <li>Json</li>
+  <p> Inserir aqui descrição sobre Json. </p>
+</ul>
+<ul>
 
 <a href="https://imgbox.com/3tZuCnVg" target="_blank"><img src="https://images2.imgbox.com/42/88/3tZuCnVg_o.png" alt="image host" height="5px" width="900px"/></a>
 
@@ -74,6 +80,6 @@ python __init__.py
 
 <a href="https://imgbox.com/3tZuCnVg" target="_blank"><img src="https://images2.imgbox.com/42/88/3tZuCnVg_o.png" alt="image host" height="5px" width="900px"/></a>
 
-<h2 id="execucao"> 📂 ORGANIZAÇÃO DO PROJETO</h2>
+<h2 id="organizacao"> 📂 ORGANIZAÇÃO DO PROJETO</h2>
 ```sh
 ```

@@ -12,12 +12,10 @@
 
 <h2 id="creditos"> :scroll: CRÉDITOS</h2>
 
-- Instituição: Let's Code <a href="https://www.linkedin.com/school/adatechbr/">(Ada Tech)</a>
+- Instituição: Let's Code (<a href="https://www.linkedin.com/school/adatechbr/">Ada Tech<)/a>
 - Curso: Vem ser Tech | Dados
 - Disciplina: Lógica de Programação I
 - Professores: Thiago
-
-O desenvolvimento do projeto dar-se-á conclusão do módulo I do curso Vem ser Tech | Dados, consistindo em um sistema simples de cadastro e monitoramentos de restaurantes.
 
 <a href="https://imgbox.com/3tZuCnVg" target="_blank"><img src="https://images2.imgbox.com/42/88/3tZuCnVg_o.png" alt="image host" height="5px" width="900px"/></a>
 

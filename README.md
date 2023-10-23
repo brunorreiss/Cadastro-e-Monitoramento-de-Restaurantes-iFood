@@ -4,10 +4,8 @@
 <br>
 </br>
 <p align="center"> 
-<a href="https://imgbox.com/vtDMLq29" target="_blank"><img src="https://thumbs2.imgbox.com/4a/43/vtDMLq29_t.gif" alt="image host"/></a>
+<a href="https://imgbox.com/vtDMLq29" target="_blank"><img src="https://thumbs2.imgbox.com/4a/43/vtDMLq29_t.gif" alt="image host"  height="212px"/></a>
 </p>
-
-<a href="https://imgbox.com/YnQ5WeyW" target="_blank"><img src="https://thumbs2.imgbox.com/3c/77/YnQ5WeyW_t.gif" alt="image host" height="5px" width="900px"/></a>
 
 <h4> <p align="center"> <a href="#creditos">Créditos</a> | <a href="#equipe">Equipe</a> | <a href="#especificacao">Especificação</a> | <a href="#contexto">Contexto e objetivo</a> | <a href="#tecnologias">Tecnologias utilizadas</a> | <a href="execucao">Execução</a> | <a href="#organizacao">Organização do projeto</a> </p>
 

@@ -6,34 +6,40 @@
 <a href="https://images.app.goo.gl/QpYQAZbj5fb2xocHA" target="_blank"><img src="https://images.app.goo.gl/QpYQAZbj5fb2xocHA" alt="image host" height="142px"/></a>
 </p>
 
-<h4> | <a href="#canais">Créditos</a> | <a href="#contexto">Contexto e objetivo</a> | <a href="#arquivos">Descrição dos arquivos</a> | <a href="#ferramentas">Ferramentas</a> | <a href="#funcionalidades">Funcionalidades</a> | <a href="#bot">O Bot</a> | <a href="#creditos">Créditos</a> |</h4>
+<h4> <a href="#creditos">Créditos</a> | <a href="#equipe">Equipe</a> | <a href="#especificacao">Especificação</a> | <a href="#contexto">Contexto e objetivo</a> | <a href="#tecnologias">Tecnologias utilizadas</a> | <a href="execucao">Execução</a> | <a href="#organização">Organização do projeto</a>
 
 <a href="https://imgbox.com/3tZuCnVg" target="_blank"><img src="https://images2.imgbox.com/42/88/3tZuCnVg_o.png" alt="image host" height="5px" width="900px"/></a>
 
 <h2 id="creditos"> :scroll: CRÉDITOS</h2>
 
+- Instituição: Let's Code <a href="https://www.linkedin.com/school/adatechbr/">(Ada Tech)</a>
+- Curso: Vem ser Tech | Dados
+- Disciplina: Lógica de Programação I
+- Professores: Thiago
+
 O desenvolvimento do projeto dar-se-á conclusão do módulo I do curso Vem ser Tech | Dados, consistindo em um sistema simples de cadastro e monitoramentos de restaurantes.
 
 <a href="https://imgbox.com/3tZuCnVg" target="_blank"><img src="https://images2.imgbox.com/42/88/3tZuCnVg_o.png" alt="image host" height="5px" width="900px"/></a>
 
-<h2 id="contexto"> :brain: CONTEXTO E OBJETIVO</h2>
+<h2 id="contexto"> 📊: CONTEXTO E OBJETIVO</h2>
 
-- Instituição: Let's Code <a href="https://www.linkedin.com/school/adatechbr/">(Ada Tech)</a>
-- Curso: Vem ser Tech | Dados
-- Disciplina: Lógica de Programação I
-- Professores: Thiago 
-- Alunos: Anna Lígia Nogueira, Bruno Reis, Gabriel, Guilherme Pereira, Matheus Miranda Brandão
+O desenvolvimento do projeto dar-se-á conclusão do módulo I do curso Vem ser Tech | Dados, consistindo em um sistema simples de cadastro e monitoramentos de restaurantes.
 
-Este projeto tem como objetivo a conclusão do módulo I do curso Vem ser Tech. Ela consiste em um sistema simples de cadastro e monitoramentos de restaurantes.
-## Conteúdo
+<a href="https://imgbox.com/3tZuCnVg" target="_blank"><img src="https://images2.imgbox.com/42/88/3tZuCnVg_o.png" alt="image host" height="5px" width="900px"/></a>
 
-- Especificação
-- Integrantes
-- Tecnologias
-- Execução
-- Organização do projeto
+<h2 id="equipe"> :brain: EQUIPE</h2>
 
-## Especificação
+Projeto desenvolvido pelos Devs:
+
+- [Anna Lígia Nogueira]()
+- [Bruno Reis](https://github.com/brunorreiss)
+- [Gabriel](https://github.com/gabrielvmdvital)
+- [Guilherme Pereira]()
+- [Matheus Miranda Brandão](https://github.com/MatBrands)
+
+<a href="https://imgbox.com/3tZuCnVg" target="_blank"><img src="https://images2.imgbox.com/42/88/3tZuCnVg_o.png" alt="image host" height="5px" width="900px"/></a>
+
+<h2 id="especificacao"> :books: ESPECIFICAÇÃO</h2>
 
 O seu grupo foi encarregado de fazer uma interface para cadastro e monitoramento de restaurantes no iFood. Desenvolvam um sistema com menu que tenha as seguintes características:
 - Cadastro de um novo restaurante, da forma [nome_restaurante, [lat, lon], n_pedidos];
@@ -43,15 +49,6 @@ O seu grupo foi encarregado de fazer uma interface para cadastro e monitoramento
 - Além disso, crie também pelo menos três novas funcionalidades para essa interface. 
 
 Obs:. Você terá em mãos algumas funções que implementam a manipulação de arquivos, para viabilizar o projeto. 
-
-## Integrantes
-Projeto desenvolvido pelos Devs:
-
-- [Anna Lígia Nogueira]()
-- [Bruno Reis](https://github.com/brunorreiss)
-- [Gabriel](https://github.com/gabrielvmdvital)
-- [Guilherme Pereira]()
-- [Matheus Miranda Brandão](https://github.com/MatBrands)
 
 ## Tecnologias
 

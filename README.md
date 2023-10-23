@@ -6,7 +6,7 @@
 <a href="https://images.app.goo.gl/QpYQAZbj5fb2xocHA" target="_blank"><img src="https://images.app.goo.gl/QpYQAZbj5fb2xocHA" alt="image host" height="142px"/></a>
 </p>
 
-<h4> <a href="#creditos">Créditos</a> | <a href="#equipe">Equipe</a> | <a href="#especificacao">Especificação</a> | <a href="#contexto">Contexto e objetivo</a> | <a href="#tecnologias">Tecnologias utilizadas</a> | <a href="execucao">Execução</a> | <a href="#organização">Organização do projeto</a>
+<h4> <p align="center"> <a href="#creditos">Créditos</a> | <a href="#equipe">Equipe</a> | <a href="#especificacao">Especificação</a> | <a href="#contexto">Contexto e objetivo</a> | <a href="#tecnologias">Tecnologias utilizadas</a> | <a href="execucao">Execução</a> | <a href="#organização">Organização do projeto</a> </p>
 
 <a href="https://imgbox.com/3tZuCnVg" target="_blank"><img src="https://images2.imgbox.com/42/88/3tZuCnVg_o.png" alt="image host" height="5px" width="900px"/></a>
 

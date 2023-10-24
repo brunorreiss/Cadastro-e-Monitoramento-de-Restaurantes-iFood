@@ -1,6 +1,4 @@
 import math
-from uuid import uuid4
-from geopy import distance
 
 def cadastrar_restaurante(**dict) -> dict:
     restaurante = {
@@ -82,8 +80,6 @@ def atualizar_pedidos(restaurante: dict) -> dict:
     restaurante['pedidos'] = pedidos
     return restaurante
 
-# ------------------------------------------
-
 def proximidade_restaurante(restaurantes: dict, lat_user: float, lon_user: float) -> list:
     raio_terra = 6371.0  # raio da terra em km
 
@@ -109,10 +105,7 @@ def proximidade_restaurante(restaurantes: dict, lat_user: float, lon_user: float
 
     return resultado
 
-
-# abordagem usando a geopy
-def proximidade_restaurante_geopy(coord_1: list, coord_2: list) -> float:
-    return round(distance.distance(coord_1, coord_2).km, 2)
+# ------------------------------------------
 
 def fazer_pedido(cardapio, pedido) -> None:
     item = pedido

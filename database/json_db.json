@@ -1,20 +1,10 @@
 {
-    "b7f7036a-d15e-4f1e-aef6-8b383439c009": {
-        "nome": "Restaurante da Dona Chica",
+    "145165a1-d7ef-43a8-a805-5c76b9fa21bf": {
+        "nome": "Test",
         "coordenadas": [
-            10.0,
-            50.0
+            12.0,
+            2.0
         ],
-        "pedidos": 0,
-        "cardapio": [
-            {
-                "nome_produto": "arroz",
-                "categoria": "comida",
-                "alcoolico": true,
-                "valor": 50.0,
-                "estoque": 8
-            }
-        ],
-        "id": "b7f7036a-d15e-4f1e-aef6-8b383439c009"
+        "pedidos": 0
     }
 }

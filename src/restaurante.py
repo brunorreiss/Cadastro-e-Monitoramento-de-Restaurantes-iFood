@@ -83,7 +83,7 @@ def atualizar_pedidos(restaurante: dict) -> dict:
 def proximidade_restaurante(restaurantes: dict, lat_user: float, lon_user: float) -> list:
     raio_terra = 6371.0  # raio da terra em km
 
-    resultado = {}
+    restaurantes_proximos = {}
     for restaurante in restaurantes.values():
         # Converter graus para radianos
         lat1 = math.radians(restaurante.get("coordenadas")[0])
@@ -101,12 +101,15 @@ def proximidade_restaurante(restaurantes: dict, lat_user: float, lon_user: float
         # Distância em quilômetros
         distance = round(raio_terra * c, 2)
         
-        resultado[distance] = restaurante['nome']
-
-    return resultado
+        restaurantes_proximos[restaurante['nome']] = { 'coordenadas_restaurante': restaurante['coordenadas'],
+                                           'coordenadas_usuario': [lat_user, lon_user],
+                                           'distancia': distance
+                                           }
+    
+    return restaurantes_proximos
 
 # ------------------------------------------
-
+    
 def fazer_pedido(cardapio, pedido) -> None:
     item = pedido
     if item in cardapio:

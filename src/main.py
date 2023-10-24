@@ -65,15 +65,14 @@ def menu():
         #     pass
 
         elif opcao == "4":
-            lat = float(input("Latitude: "))
-            lon = float(input("Longitude: "))
+            lat = float(input("Informe sua coordenada de latitude: "))
+            lon = float(input("Informe sua coordenada de longitude: "))
             
-            restaurantes_proximos = proximidade_restaurante(restaurantes, lat, lon)
+            restaurantes_proximos = proximidade_restaurante(restaurantes, lat, lon)            
+            restaurantes_proximos = sorted(restaurantes_proximos, key=lambda restaurante: restaurante['distancia'])
             
-            ordenados = sorted(restaurantes_proximos.keys())
-            
-            for item in ordenados:
-                print (f"Restaurante: {restaurantes_proximos[item]}, com a distância de {item} metros.")
+            for restaurante, distancia in restaurantes_proximos.items():
+                print (f"Restaurante: {restaurante}, com a distância de {distancia} metros.")
             
             input('\nDigite qualquer tecla para continuar ...')
 

@@ -1,7 +1,7 @@
 import os
 import platform
 from src.restaurante import *
-from src.utils.utils import *
+from src.json_manipulation import *
 
 def clear() -> None:
     if platform.system() == 'Windows':
@@ -15,16 +15,16 @@ def menu():
         print("Bem-vindo ao iFood!")
         print("O que você deseja fazer?")
         
-        print("".join(
+        print("\n".join(
             [
-                "1. Cadastrar novo restaurante\n",
-                "2. Criar cardápio\n",
-                "3. Registrar histórico de vendas\n",
-                "4. Verificar restaurantes mais próximos\n",
-                "5. Listar restaurantes\n",
-                "6. Remover restaurante\n",
-                "7. Atualizar número de pedidos\n",
-                "8. Fazer pedido\n",
+                "1. Cadastrar novo restaurante",
+                "2. Criar cardápio",
+                "3. Registrar histórico de vendas",
+                "4. Verificar restaurantes mais próximos",
+                "5. Listar restaurantes",
+                "6. Remover restaurante",
+                "7. Atualizar número de pedidos",
+                "8. Fazer pedido",
                 "9. Sair"
             ]
         ))

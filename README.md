@@ -16,7 +16,6 @@
 - Disciplina: Lógica de Programação I
 - Professores: Thiago
 
-<a href="https://imgbox.com/vtDMLq29" target="_blank"><img src="https://imgbox.com/vtDMLq29" alt="image host" height="142px"/></a>
 <a href="https://imgbox.com/3tZuCnVg" target="_blank"><img src="https://images2.imgbox.com/42/88/3tZuCnVg_o.png" alt="image host" height="5px" width="900px"/></a>
 
 <h2 id="contexto"> 📊: CONTEXTO E OBJETIVO</h2>

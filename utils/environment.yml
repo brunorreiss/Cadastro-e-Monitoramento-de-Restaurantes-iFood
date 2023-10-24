@@ -1,0 +1,9 @@
+name: grupo_7_venv
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11.5
+  - pip=23.1.2
+  - geopy=2.4.0
+  - ipykernel=6.22.0

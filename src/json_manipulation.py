@@ -25,7 +25,6 @@ def save_data(data: dict, file_path: str = DEFAULT_FILE_PATH) -> None:
         json.dump(data, file, indent=4)
         
 def salvar_restaurante(**restaurante: dict) -> None:
-    
     restaurantes = load_data()
     
     if restaurante.get('id'):

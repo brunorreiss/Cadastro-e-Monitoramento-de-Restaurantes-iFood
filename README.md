@@ -28,9 +28,9 @@ O desenvolvimento do projeto dar-se-á conclusão do módulo I do curso Vem ser 
 
 Projeto desenvolvido pelos Devs:
 
-- [Anna Lígia Nogueira]()
+- [Anna Lígia Nogueira](https://github.com/ligianogueira1)
 - [Bruno Reis](https://github.com/brunorreiss)
-- [Gabriel](https://github.com/gabrielvmdvital)
+- [Gabriel Victor](https://github.com/gabrielvmdvital)
 - [Guilherme Pereira]()
 - [Matheus Miranda Brandão](https://github.com/MatBrands)
 

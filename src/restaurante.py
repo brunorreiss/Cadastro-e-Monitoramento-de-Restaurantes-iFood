@@ -30,24 +30,32 @@ def criar_cardapio(restaurante: dict) -> dict:
         nome_produto = input("Nome do produto: ")
         if nome_produto.lower() == "sair":
             break
+        
         categoria = input("Tipo do item (comida ou bebida): ").lower()
         if categoria == 'sair':
             break
+        
         alcoolico = input("O item é alcoolico?\n1 - Sim, 0 - Não\n").lower()
         if alcoolico == 'sair':
             break
         else:
-            alcoolico = bool(alcoolico)
+            if alcoolico == '1':
+                alcoolico = True
+            else:
+                alcoolico = False
+                
         valor = input("Informe o valor do produto: ")
         if valor == 'sair':
             break
         else:
             valor = float(valor)
+            
         estoque = input("Informe a quantidade em estoque: ")
         if estoque == 'sair':
             break
         else:
             estoque = int(estoque)
+            
         items.append(
             {
                 "nome_produto": nome_produto,
@@ -76,26 +84,30 @@ def atualizar_pedidos(restaurante: dict) -> dict:
 
 # ------------------------------------------
 
-def proximidade_restaurante(coord_1: list, coord_2: list) -> float:
+def proximidade_restaurante(restaurantes: dict, lat_user: float, lon_user: float) -> list:
     raio_terra = 6371.0  # raio da terra em km
 
-    # Converter graus para radianos
-    lat1 = math.radians(coord_1[0])
-    lat2 = math.radians(coord_2[0])
-    lon1 = math.radians(coord_1[1])
-    lon2 = math.radians(coord_2[1])
+    resultado = {}
+    for restaurante in restaurantes.values():
+        # Converter graus para radianos
+        lat1 = math.radians(restaurante.get("coordenadas")[0])
+        lat2 = math.radians(lat_user)
+        lon1 = math.radians(restaurante.get("coordenadas")[1])
+        lon2 = math.radians(lon_user)
+    
+        # Fórmula de Haversine
+        a = (
+            math.sin((lat2 - lat1) / 2) ** 2
+            + math.cos(lat1) * math.cos(lat2) * math.sin((lon2 - lon1) / 2) ** 2
+        )
+        c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
 
-    # Fórmula de Haversine
-    a = (
-        math.sin((lat2 - lat1) / 2) ** 2
-        + math.cos(lat1) * math.cos(lat2) * math.sin((lon2 - lon1) / 2) ** 2
-    )
-    c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
+        # Distância em quilômetros
+        distance = round(raio_terra * c, 2)
+        
+        resultado[distance] = restaurante['nome']
 
-    # Distância em quilômetros
-    distance = round(raio_terra * c, 2)
-
-    return distance
+    return resultado
 
 
 # abordagem usando a geopy

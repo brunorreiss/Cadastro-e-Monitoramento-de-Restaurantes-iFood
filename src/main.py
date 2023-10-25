@@ -9,7 +9,26 @@ def clear() -> None:
     else:
         os.system('clear')
 
-def menu():
+def menu_principal():
+    while True:
+        print("\n".join(
+                [
+                    "1. Acessar como parceiro;",
+                    "2. Acessar como usuário;",
+                    "3. Sair! "
+                ]
+            ))
+        menu_switch = input('Escolha uma opção: ')
+
+        if menu_switch == '1':
+            menu_parceiro()
+        elif menu_switch == '2':
+            menu_user()
+        elif menu_switch == '3':
+            break
+
+
+def menu_parceiro():
     while True:
         clear()
         print("Bem-vindo ao iFood!")
@@ -137,3 +156,10 @@ def menu():
 
         else:
             print("Opção inválida!")
+
+
+def menu_user():
+    pass
+
+if __name__ == "__main__":
+    menu_parceiro()           

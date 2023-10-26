@@ -77,6 +77,6 @@ Projeto desenvolvido pelos Devs:
 
 - [Anna Lígia Nogueira](https://github.com/ligianogueira1)
 - [Bruno Reis](https://github.com/brunorreiss)
-- [Gabriel](https://github.com/gabrielvmdvital)
+- [Gabriel Victor](https://github.com/gabrielvmdvital)
 - [Guilherme Pereira](https://github.com/Guilhermepsilva003)
 - [Matheus Miranda Brandão](https://github.com/MatBrands)

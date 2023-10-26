@@ -1,4 +1,4 @@
-from src.main import menu_parceiro
+from src.main import *
 
 if __name__ == "__main__":
-    menu_parceiro()
+    menu_principal()

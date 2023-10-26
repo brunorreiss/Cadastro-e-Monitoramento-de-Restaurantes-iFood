@@ -1,12 +1,13 @@
 import math
+from uuid import uuid4
 
-def cadastrar_restaurante(**dict) -> dict:
+def cadastrar_restaurante(**kwargs) -> dict:
     restaurante = {
-        "nome": dict.get('nome'),
-        "lat": dict.get('coordenadas')[0],
-        "lon": dict.get('coordenadas')[0],
-        "pedidos": dict.get('pedidos'),
-        "cardapio": dict.get('cardapio'),
+        "nome": kwargs.get('nome'),
+        "coordenadas": kwargs.get('coordenadas'),
+        "historico_vendas": kwargs.get('historico_vendas'),
+        "pedidos": kwargs.get('pedidos'),
+        "cardapio": kwargs.get('cardapio'),
     }
     return restaurante
 
@@ -67,23 +68,13 @@ def criar_cardapio(restaurante: dict) -> dict:
     restaurante['cardapio'] = items
     return restaurante
 
-def atualizar_pedidos(restaurante: dict) -> dict:
-    pedidos = restaurante.get('pedidos')
-    
-    print("Digite a quantidade de pedidos:")
-    try:
-        novos_pedidos = int(input())
-    except ValueError:
-        print("Por favor, insira um número inteiro.")
-        
-    pedidos += novos_pedidos
-    restaurante['pedidos'] = pedidos
+def atualizar_estoque(restaurante: dict, idx: int, qtd: int) -> dict:
+    restaurante['cardapio'][idx]['estoque'] = qtd
     return restaurante
 
 def proximidade_restaurante(restaurantes: dict, lat_user: float, lon_user: float) -> list:
     raio_terra = 6371.0  # raio da terra em km
-
-    restaurantes_proximos = {}
+    restaurantes_proximo = []
     for restaurante in restaurantes.values():
         # Converter graus para radianos
         lat1 = math.radians(restaurante.get("coordenadas")[0])
@@ -99,19 +90,40 @@ def proximidade_restaurante(restaurantes: dict, lat_user: float, lon_user: float
         c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
 
         # Distância em quilômetros
-        distance = round(raio_terra * c, 2)
-        
-        restaurantes_proximos[restaurante['nome']] = { 'coordenadas_restaurante': restaurante['coordenadas'],
-                                           'coordenadas_usuario': [lat_user, lon_user],
-                                           'distancia': distance
-                                           }
-    
-    return restaurantes_proximos
+        distance = round(raio_terra * c, 2)                                   
+        restaurantes_proximo.append({ 
+            'nome': restaurante['nome'], 
+            'distancia': distance
+        } )
+    return restaurantes_proximo
 
-# ------------------------------------------
     
-def fazer_pedido(cardapio, pedido) -> None:
-    item = pedido
-    if item in cardapio:
-        print(f"Adicionando {item} ao seu pedido.")
-        pedido.append(item)
+def realizar_pedido(restaurante: dict, **kwargs) -> None:
+    """
+    'id_pedido': str,
+    'user_name': str,
+    'user_phone': str,
+    'user_coordenadas': [lat, lon],
+    'qtd': int,
+    'total_pedido': float
+    """
+    id_pedido = str(uuid4())
+    user_name = kwargs.get('user_name')
+    user_phone = kwargs.get('user_phone')
+    user_coordenadas = kwargs.get('user_coordenadas')
+    nome_produto = kwargs.get('nome_produto')
+    qtd = kwargs.get('qtd')
+    total_pedido = round(restaurante.get('cardapio')[kwargs.get('indice')].get('valor')*qtd, 2)
+    restaurante.get('cardapio')[kwargs.get('indice')]['estoque'] -= qtd
+    restaurante['pedidos'] += 1 
+    dict_pedido = {
+        'id_pedido': id_pedido,
+        'user_name': user_name,
+        'user_phone': user_phone,
+        'user_coordenadas': user_coordenadas,
+        'nome_produto': nome_produto,
+        'qtd': qtd,
+        'total_pedido': total_pedido
+    }
+    restaurante['historico_vendas'].append(dict_pedido)
+    return restaurante

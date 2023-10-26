@@ -29,6 +29,7 @@ def salvar_restaurante(**restaurante: dict) -> None:
     
     if restaurante.get('id'):
         id = restaurante.get('id')
+        restaurante.pop("id")
     else:
         id = str(uuid4())
     restaurantes[id] = restaurante

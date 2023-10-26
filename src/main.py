@@ -38,13 +38,11 @@ def menu_parceiro():
             [
                 "1. Cadastrar novo restaurante",
                 "2. Criar cardápio",
-                "3. Registrar histórico de vendas",
-                "4. Verificar restaurantes mais próximos",
-                "5. Listar restaurantes",
-                "6. Remover restaurante",
-                "7. Atualizar número de pedidos",
-                "8. Fazer pedido",
-                "9. Sair"
+                "3. Ver histórico de vendas",
+                "4. Listar restaurantes",
+                "5. Remover restaurante",
+                "6. Atualizar estoque",
+                "7. Sair"
             ]
         ))
 
@@ -56,11 +54,13 @@ def menu_parceiro():
             nome = input("Nome do restaurante: ")
             lat = float(input("Latitude: "))
             lon = float(input("Longitude: "))
-            restaurante = {
+            restaurante = cadastrar_restaurante(**{
                 'nome': nome,
                 'coordenadas': [lat, lon],
-                'pedidos': 0
-            }
+                'pedidos': 0,
+                'cardapio': [],
+                'historico_vendas': []
+            })
             salvar_restaurante(**restaurante)
 
         elif opcao == "2":
@@ -80,22 +80,24 @@ def menu_parceiro():
             else:
                 print("Restaurante não encontrado.")
 
-        # elif opcao == "3":
-        #     pass
+        elif opcao == "3":
+            for id, restaurante in restaurantes.items():
+                clear()
+                for chave, valor in restaurante.items():
+                    if chave == 'historico_vendas':
+                        if valor :
+                            for item in valor:
+                                for nova_chave, novo_valor in item.items():
+                                    if nova_chave in ['user_name', 'nome_produto', 'qtd', 'total_pedido']:
+                                        print(f'{nova_chave}: {novo_valor}')
+                                print()
+                        else:
+                            print('Não há histórico de compras para o restaurante!')           
+                    else:
+                        continue
+                input('\nDigite qualquer tecla para continuar ...')
 
         elif opcao == "4":
-            lat = float(input("Informe sua coordenada de latitude: "))
-            lon = float(input("Informe sua coordenada de longitude: "))
-            
-            restaurantes_proximos = proximidade_restaurante(restaurantes, lat, lon)            
-            restaurantes_proximos = sorted(restaurantes_proximos, key=lambda restaurante: restaurante['distancia'])
-            
-            for restaurante, distancia in restaurantes_proximos.items():
-                print (f"Restaurante: {restaurante}, com a distância de {distancia} metros.")
-            
-            input('\nDigite qualquer tecla para continuar ...')
-
-        elif opcao == "5":
             for id, restaurante in restaurantes.items():
                 clear()
                 for chave, valor in restaurante.items():
@@ -106,13 +108,13 @@ def menu_parceiro():
                         for item in valor:
                             for nova_chave, novo_valor in item.items():
                                 print(f"\t{nova_chave}: {novo_valor}")
-                    elif chave == 'id':
+                    elif chave in ['id', 'pedidos', 'historico_vendas' ]:
                         continue
                     else:
                         print(f"{chave}: {valor}")
                 input('\nDigite qualquer tecla para continuar ...')
 
-        elif opcao == "6":
+        elif opcao == "5":
             print('Restaurantes cadastrados:')
             for _, restaurante in restaurantes.items():
                 print(restaurante.get('nome'))
@@ -131,8 +133,12 @@ def menu_parceiro():
             else:
                 print("Restaurante não encontrado.")
 
-        elif opcao == "7":
-            nome = input("Nome do restaurante: ")
+        elif opcao == "6":
+            print('Restaurantes:')
+            for _, restaurante in restaurantes.items():
+                print(restaurante.get('nome'))
+                
+            nome = input("\nNome do restaurante que deseja selecionar: ")
             
             id = None
             for chave in restaurantes:
@@ -141,17 +147,26 @@ def menu_parceiro():
                     break
             
             if id:
-                restaurante = restaurantes[id]
-                restaurante = atualizar_pedidos()
-                restaurante['id'] = id
-                salvar_restaurante(**restaurante)
+                restaurante_selecionado = restaurantes.get(id)
+                for item in restaurante_selecionado['cardapio']:
+                  for key, value in item.items():
+                        print(f"{key}: {value}")
+                nome_produto = input('Qual o nome do produto que deseja comprar: ')
+                qtd = int(input(f'Qual nova quantidade do produto {nome_produto} deseja adicionar: '))
+                for idx, item in enumerate(restaurante_selecionado['cardapio']):
+                    if item.get('nome_produto') == nome_produto:
+                        restaurante_atualizado = atualizar_estoque(restaurante_selecionado, idx, qtd)
+                        restaurante_atualizado['id'] = id                        
+                        salvar_restaurante(**restaurante_atualizado)
+                        break
+
+                else:
+                    print('Produto não existe no cardapio!') 
+                
             else:
                 print("Restaurante não encontrado.")
-                
-        # elif opcao == 8:
-        #     pass
 
-        elif opcao == "9":
+        elif opcao == "7":
             break
 
         else:
@@ -159,7 +174,90 @@ def menu_parceiro():
 
 
 def menu_user():
-    pass
+    clear()
+    user_name = input('Insira seu nome: ')
+    user_telefone = input('Insira seu numero telefonico: ')
+    user_latitude, user_longitude = float(input('Insira sua latitude: ')), float(input('Insira sua longitude: '))
+
+    restaurantes = load_data()
+    while True:
+        print("\n".join(
+                    [
+                        "1. Encontrar restaurantes proximos;",
+                        "2. Realizar pedido;",
+                        "3. Sair! "
+                    ]
+                ))
+        user_option = input('Escolha uma opção: ')
+
+        
+        if user_option == '3':
+            print('Obrigado pelo seu acesso!')
+            break
+
+        
+        elif user_option == '1':  
+            restaurantes_proximos = proximidade_restaurante(restaurantes, user_latitude, user_longitude)            
+            restaurantes_proximos = sorted(restaurantes_proximos, key=lambda restaurante: restaurante['distancia'])          
+            count = 0
+            for restaurante in restaurantes_proximos:
+                if count == 5:
+                    break
+                print (f"Restaurante: {restaurante['nome']}, com a distância de {restaurante['distancia']} metros.")
+                count += 1
+            input('\nDigite qualquer tecla para continuar ...')
+
+        elif user_option == '2':
+            print('Restaurantes:')
+            for _, restaurante in restaurantes.items():
+                print(restaurante.get('nome'))
+                
+            nome = input("\nNome do restaurante realizar um pedido: ")
+            
+            id = None
+            for chave in restaurantes:
+                if restaurantes[chave].get('nome') == nome:
+                    id = chave
+                    break
+            
+            if id:
+                restaurante_selecionado = restaurantes.get(id)
+                for item in restaurante_selecionado['cardapio']:
+                  for key, value in item.items():
+                        print(f"{key}: {value}")
+                nome_produto = input('Qual o nome do produto que deseja comprar: ')
+                qtd = int(input('Qual a quantidade que deseja comprar: '))
+                status = False
+                idx = None
+                for i, item in enumerate(restaurante_selecionado['cardapio']):
+                    if item.get('nome_produto') == nome_produto:
+                      if item.get('estoque') >= qtd:
+                          status = True
+                          idx = i
+                          break
+                      else:
+                          print('Quantidade não disponível em estoque!')
+                
+                if status:
+                    dicionario = {
+                        'indice': idx,                        
+                        'user_name': user_name,
+                        'user_phone': user_telefone,
+                        'user_coordenadas': [user_latitude, user_longitude],
+                        'nome_produto': nome_produto,
+                        'qtd': qtd,
+                    }
+                    restaurante_selecionado = realizar_pedido(restaurante_selecionado, **dicionario)
+                    restaurante_selecionado['id'] = id
+                    salvar_restaurante(**restaurante_selecionado)
+
+                else:
+                    print('Produto não existe no cardapio!') 
+                
+            else:
+                print("Restaurante não encontrado.")            
+
+
 
 if __name__ == "__main__":
-    menu_parceiro()           
+    menu_principal()           

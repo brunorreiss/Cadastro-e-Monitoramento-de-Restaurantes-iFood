@@ -45,7 +45,7 @@ Obs:. Você terá em mãos algumas funções que implementam a manipulação de 
 </ul> 
 <ul>
   <li>Json</li>
-  <p> Sendo uma importante ferramenta utilizada para trocar informações entre um servidor e um cliente, além de seu formato de dados leve e de fácil leitura, O Json, neste projeto, fora utilizado de tal forma que cada entrada representa um restaurante e é definida como um objeto detentor de várias propriedades, como uma matriz de objetos que descrevem os itens do cardápio ou vendas anteriores. </p>
+  <p> Sendo uma importante ferramenta utilizada para trocar informações entre um servidor e um cliente, além de seu formato de dados leve e de fácil leitura, o Json, neste projeto, fora utilizado de forma que cada entrada representa um restaurante e é definida como um objeto detentor de várias propriedades, como uma matriz de objetos que descrevem os itens do cardápio ou vendas anteriores. </p>
 </ul>
 
 <a href="https://imgbox.com/3tZuCnVg" target="_blank"><img src="https://images2.imgbox.com/42/88/3tZuCnVg_o.png" alt="image host" height="5px" width="900px"/></a>

@@ -44,15 +44,21 @@ Obs:. Você terá em mãos algumas funções que implementam a manipulação de 
   <p> A linguagem utilizada para o desenvolvimento fora <strong> Python</strong>, tanto por ser a ferramenta de aprendizado utilizada durante o curso, quanto por ser uma linguagem de alto nível, orientada a objetos, funcional e de tipagem dinâmica e forte. </p>
 </ul> 
 <ul>
-  <li>Json</li>
-  <p> Sendo uma importante ferramenta utilizada para trocar informações entre um servidor e um cliente, além de seu formato de dados leve e de fácil leitura, o Json, neste projeto, fora utilizado de forma que cada entrada representa um restaurante e é definida como um objeto detentor de várias propriedades, como uma matriz de objetos que descrevem os itens do cardápio ou vendas anteriores. </p>
+  <li>JSON</li>
+  <p> Sendo uma importante ferramenta utilizada para trocar informações entre um servidor e um cliente, além de seu formato de dados leve e de fácil leitura, o JSON, neste projeto, fora utilizado de forma que cada entrada representa um restaurante e é definida como um objeto detentor de várias propriedades, como uma matriz de objetos que descrevem os itens do cardápio ou vendas anteriores. </p>
 </ul>
 
 <a href="https://imgbox.com/3tZuCnVg" target="_blank"><img src="https://images2.imgbox.com/42/88/3tZuCnVg_o.png" alt="image host" height="5px" width="900px"/></a>
 
 <h2 id="organizacao"> 📂 ORGANIZAÇÃO DOS ARQUIVOS </h2>
-```sh
-```
+
+<p>Este projeto inclui arquivos executáveis e de destino, além de acesso ao diretório fonte (repositório), como a seguir:</p>
+<h4>➔ Arquivos executáveis:</h4>
+<ul>
+  <li><a href="https://github.com/brunorreiss/Cadastro-e-Monitoramento-de-Restaurantes-iFood/blob/main/src/main.py"><b>main.py</b></a> - Contém o código-fonte responsável pelos menus disponíveis para o restaurante parceiro e para o cliente (incluindo procedimentos de cadastro, validação de pedidos através da disponibilidade do produto em estoque, mensagens de erro para entradas inválidas etc.). </li>
+   <li><a href="https://github.com/brunorreiss/Cadastro-e-Monitoramento-de-Restaurantes-iFood/blob/main/src/json_manipulation.py"><b>json_manipulation.py</b></a> - Define um conjunto de funções para lidar com a criação, leitura, validação, gravação e manipulação dos dados em formato JSON no arquivo importado no cabeçalho do código. </li>
+    <li><a href="https://github.com/brunorreiss/Cadastro-e-Monitoramento-de-Restaurantes-iFood/blob/main/src/restaurante.py"><b>restaurante.py</b></a> - As funcionalidades deste código reduzem o estoque do item quando este é confirmado, incrementam o contador de pedidos do restaurante, criam um dicionário representando a solicitação e adicionam o pedido ao histórico de vendas do restaurante. </li>
+</ul>
 
 <a href="https://imgbox.com/3tZuCnVg" target="_blank"><img src="https://images2.imgbox.com/42/88/3tZuCnVg_o.png" alt="image host" height="5px" width="900px"/></a>
 

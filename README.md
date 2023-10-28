@@ -68,7 +68,7 @@ Obs:. Você terá em mãos algumas funções que implementam a manipulação de 
   <li>from src.json_manipulation import *: importa todas as funções, classes e variáveis definidas no módulo "json_manipulation" localizado no diretório "src." </li>
 </ul>
 <ul>
-  » No arquivo <a href="https://github.com/brunorreiss/Cadastro-e-Monitoramento-de-Restaurantes-iFood/blob/main/src/json_manipulation.py"><bjson_manipulation.py</b>:</a>
+  » No arquivo <a href="https://github.com/brunorreiss/Cadastro-e-Monitoramento-de-Restaurantes-iFood/blob/main/src/json_manipulation.py"><b>json_manipulation.py</b>:</a>
   <li>from uuid import uuid4: sendo uma importação específica do módulo uuid, permite a geração de chaves primárias. </li>
  </ul> 
  <ul>

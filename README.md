@@ -59,6 +59,22 @@ Obs:. Você terá em mãos algumas funções que implementam a manipulação de 
    <li><a href="https://github.com/brunorreiss/Cadastro-e-Monitoramento-de-Restaurantes-iFood/blob/main/src/json_manipulation.py"><b>json_manipulation.py</b></a> - Define um conjunto de funções para lidar com a criação, leitura, validação, gravação e manipulação dos dados em formato JSON no arquivo importado no cabeçalho do código. </li>
     <li><a href="https://github.com/brunorreiss/Cadastro-e-Monitoramento-de-Restaurantes-iFood/blob/main/src/restaurante.py"><b>restaurante.py</b></a> - As funcionalidades deste código reduzem o estoque do item quando este é confirmado, incrementam o contador de pedidos do restaurante, criam um dicionário representando a solicitação e adicionam o pedido ao histórico de vendas do restaurante. </li>
 </ul>
+<h4>➔ Bibliotecas utilizadas:</h4> 
+<ul>
+  » No arquivo <a href="https://github.com/brunorreiss/Cadastro-e-Monitoramento-de-Restaurantes-iFood/blob/main/src/main.py"><b>main.py</b>:</a>
+  <li>import os: fornece funcionalidades para interagir com o sistema operacional, como manipular arquivos, pastas e variáveis de ambiente. </li>
+  <li>import platform: permite ao programa obter informações sobre a plataforma na qual ele está sendo executado, como o sistema operacional e a arquitetura do sistema.. </li>
+  <li>from src.restaurante import *: esta linha importa todas as funções, classes e variáveis definidas no módulo "restaurante", localizado no diretório "src." Isso significa que o código pode utilizar todas as definições deste módulo em todo o programa. </li>
+  <li>from src.json_manipulation import *: importa todas as funções, classes e variáveis definidas no módulo "json_manipulation" localizado no diretório "src." </li>
+</ul>
+<ul>
+  » No arquivo <a href="https://github.com/brunorreiss/Cadastro-e-Monitoramento-de-Restaurantes-iFood/blob/main/src/json_manipulation.py"><bjson_manipulation.py</b>:</a>
+  <li>from uuid import uuid4: sendo uma importação específica do módulo uuid, permite a geração de chaves primárias. </li>
+ </ul> 
+ <ul>
+  » No arquivo <a href="https://github.com/brunorreiss/Cadastro-e-Monitoramento-de-Restaurantes-iFood/blob/main/src/restaurante.py"><b>restaurante.py</b>:</a>
+  <li>import math: sendo a principal biblioteca por fornecer várias funções e constantes matemáticas, neste código, ela é responsável calcular a proximidade entre um conjunto de restaurantes e as coordenadas geográficas do usuário através da fórmula de Haversine. </li>
+</ul>
 
 <a href="https://imgbox.com/3tZuCnVg" target="_blank"><img src="https://images2.imgbox.com/42/88/3tZuCnVg_o.png" alt="image host" height="5px" width="900px"/></a>
 

@@ -81,11 +81,11 @@ Obs:. Você terá em mãos algumas funções que implementam a manipulação de 
 </ul>
 <h4>➔ Arquivos de destino:</h4> 
 <ul>
-  <li><a href="https://github.com/brunorreiss/Cadastro-e-Monitoramento-de-Restaurantes-iFood/blob/main/database/json_db.json"><b>json_db.json</b>:</a>Contém informações fictícias sobre usuários e restaurantes, sendo utilizado como um pequeno banco de dados para o projeto. </li>
+  <li><a href="https://github.com/brunorreiss/Cadastro-e-Monitoramento-de-Restaurantes-iFood/blob/main/database/json_db.json"><b>json_db.json</b>:</a> Contém informações fictícias sobre usuários e restaurantes, sendo utilizado como um pequeno banco de dados para o projeto. </li>
 </ul>
 <h4>➔ Diretório fonte:</h4>
 <ul>
-  <li><a href="https://github.com/brunorreiss/Cadastro-e-Monitoramento-de-Restaurantes-iFood"><b>Cadastro-e-Monitoramento-de-Restaurantes-iFood</b>:</a>Inclui todos os arquivos listados acima. </li>
+  <li><a href="https://github.com/brunorreiss/Cadastro-e-Monitoramento-de-Restaurantes-iFood"><b>Cadastro-e-Monitoramento-de-Restaurantes-iFood</b>:</a> Inclui todos os arquivos listados acima. </li>
 </ul>
   
 
@@ -97,19 +97,20 @@ Como a proposta do projeto foi a utilização de técnicas e tecnologias vistas 
 
 <p>A ordem a seguir, de possível execução dos arquivos do programa, deve ser seguida após realizar o dowload do arquivo ZIP do <a href="https://github.com/brunorreiss/Cadastro-e-Monitoramento-de-Restaurantes-iFood"><b>diretório fonte</b></a>:</p>
 
-<p><b>Passo 1) Manipulação do JASON</b>:</p>
+
+<h4>➔ Passo 1) Manipulação do JASON</h4>
 <p>É necessário que o arquivo <a href="https://github.com/brunorreiss/Cadastro-e-Monitoramento-de-Restaurantes-iFood/blob/main/src/json_manipulation.py"><b>json_manipulation.py</b></a> seja carregado e executado antes de todos os outros do repositório, visto que, em termos de dependência, é o responsável por criar o diretório e o arquivo JSON de banco de dados, caso eles não existam. Após, carrega os dados do arquivo, salva-os na ferramenta JSON e adiciona um novo restaurante ao data-base.</p>
 
-<p><b>Passo 2) Banco de dados </b>:</p>
+<h4>➔ Passo 2) Banco de dados</h4>
 <p>Diferentemente do arquivo JSON de manipulação, supracitado, este <a href="https://github.com/brunorreiss/Cadastro-e-Monitoramento-de-Restaurantes-iFood/blob/main/database/json_db.json"><b>banco</b></a> armazena os dados dos restaurantes, cardápios e histórico de vendas.</p>
   
-<p><b>Passo 3) Menu principal</b>:</a></p>
+<h4>➔ Passo 3) Menu principal</h4>
 <p> O arquivo <a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/main.py"><b>main.py</b></a> exerce a base do projeto quando possui funções as quais exibem o menu principal do programa, permitindo que o usuário escolha entre acessar como 1. parceiro ou 2. usuário. Na opção 1, há o menu de operações disponíveis para um parceiro, como cadastrar um novo restaurante, criar cardápio, ver histórico de vendas, listar restaurantes, remover restaurante, atualizar estoque ou sair. A opção 2, por sua vez, permite que o usuário encontre restaurantes próximos e realize pedidos.</p>
 
-<p><b>Passo 4) Funções para o restaurante</b>:</a></p>
+<h4>➔ Passo 4) Funções para o restaurante</h4>
 <p> No arquivo <a href="https://github.com/brunorreiss/Cadastro-e-Monitoramento-de-Restaurantes-iFood/blob/main/src/restaurante.py"><b>restaurante.py</b></a>, há funções relacionadas à manipulação de restaurantes, cardápio, atualização de estoque, cálculo de proximidade e realização de pedidos.</p>
 
-<p><b>Passo 5) O ambiente</b>:</a></p>
+<h4>➔ Passo 5) O ambiente</h4>
 <p> Um arquivo de ambiente <a href="https://github.com/brunorreiss/Cadastro-e-Monitoramento-de-Restaurantes-iFood/blob/main/utils/environment.yml"><b>Conda</b></a> é indispensável para especificar as dependências necessárias para executar o projeto.</p>
   
 <a href="https://imgbox.com/3tZuCnVg" target="_blank"><img src="https://images2.imgbox.com/42/88/3tZuCnVg_o.png" alt="image host" height="5px" width="900px"/></a>

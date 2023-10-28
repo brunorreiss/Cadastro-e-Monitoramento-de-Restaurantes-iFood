@@ -62,22 +62,22 @@ Obs:. Você terá em mãos algumas funções que implementam a manipulação de 
 <h4>➔ Bibliotecas utilizadas:</h4> 
 <ul>
   » No arquivo <a href="https://github.com/brunorreiss/Cadastro-e-Monitoramento-de-Restaurantes-iFood/blob/main/src/main.py"><b>main.py</b>:</a>
-  <li>import os: fornece funcionalidades para interagir com o sistema operacional, como manipular arquivos, pastas e variáveis de ambiente. </li>
-  <li>import platform: permite ao programa obter informações sobre a plataforma na qual ele está sendo executado, como o sistema operacional e a arquitetura do sistema.. </li>
+  <li><b>import os</b>: fornece funcionalidades para interagir com o sistema operacional, como manipular arquivos, pastas e variáveis de ambiente. </li>
+  <li><b>import platform</b>: permite ao programa obter informações sobre a plataforma na qual ele está sendo executado, como o sistema operacional e a arquitetura do sistema. </li>
 </ul>
 <ul>
   » No arquivo <a href="https://github.com/brunorreiss/Cadastro-e-Monitoramento-de-Restaurantes-iFood/blob/main/src/json_manipulation.py"><b>json_manipulation.py</b>:</a>
-  <li>from uuid import uuid4: sendo uma importação específica do módulo uuid, permite a geração de chaves primárias. </li>
+  <li><b>from uuid import uuid4</b>: sendo uma importação específica do módulo uuid, permite a geração de chaves primárias. </li>
  </ul> 
  <ul>
   » No arquivo <a href="https://github.com/brunorreiss/Cadastro-e-Monitoramento-de-Restaurantes-iFood/blob/main/src/restaurante.py"><b>restaurante.py</b>:</a>
-  <li>import math: sendo a principal biblioteca por fornecer várias funções e constantes matemáticas, neste código, ela é responsável calcular a proximidade entre um conjunto de restaurantes e as coordenadas geográficas do usuário através da fórmula de Haversine. </li>
+  <li><b>import math</b>: sendo a principal biblioteca por fornecer várias funções e constantes matemáticas, neste código, ela é responsável calcular a proximidade entre um conjunto de restaurantes e as coordenadas geográficas do usuário através da fórmula de Haversine. </li>
 </ul>
 <h4>➔ Módulos internos:</h4> 
 <ul>
   » No arquivo <a href="https://github.com/ligianogueira1/Bot_Discord_IFPB/blob/main/main.py"><b>main.py</b>:</a> </li>
-  <li>from src.restaurante import *: esta linha importa todas as funções, classes e variáveis definidas no módulo "restaurante", localizado no diretório "src." Isso significa que o código pode utilizar todas as definições deste módulo em todo o programa. </li>
-  <li>from src.json_manipulation import *: importa todas as funções, classes e variáveis definidas no módulo "json_manipulation" localizado no diretório "src." </li>
+  <li><b>from src.restaurante import *</b>: esta linha importa todas as funções, classes e variáveis definidas no módulo "restaurante", localizado no diretório "src." Isso significa que o código pode utilizar todas as definições deste módulo em todo o programa. </li>
+  <li><b>from src.json_manipulation import *</b>: importa todas as funções, classes e variáveis definidas no módulo "json_manipulation" localizado no diretório "src." </li>
 </ul>
 <h4>➔ Arquivos de destino:</h4> 
 <ul>
